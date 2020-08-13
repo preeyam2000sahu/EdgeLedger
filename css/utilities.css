@@ -1,0 +1,178 @@
+.ptext{
+    color:#28a745;
+}
+.stext{
+    color: #0284d0;
+}
+
+/* Buttons */
+.btn{
+    background: #28a745;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.bg-primary{
+    background: #28a745;
+    color: #ffffff;
+
+}
+
+.btn-secondary,
+.bg-secondary{
+    background: #0284d0;
+    color: #fff;
+}
+
+.btn-dark,
+.bg-dark
+{
+    background: #333;
+    color: white;
+}
+.btn-lite,
+.bg-lite{
+    background: #f4f4f4;
+    color:#333 ;
+}
+
+.btn-outline{
+    background: transparent;
+    color: white;
+    border: 1px white solid;
+}
+
+
+
+
+/*  */
+.flex-items{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+}
+
+.flex-items> div{
+    padding: 20px;
+}
+
+/* Flex columns */
+.flex-columns .row{
+    display: flex;
+    flex-direction: row;
+}
+.flex-columns .column{
+    display: flex;
+    flex-direction:column;
+    flex-basis: 100%;
+    flex:1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2
+{
+    height: 100%;;
+}
+
+.flex-columns img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.flex-columns .column-2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    
+    padding: 30px;
+}
+
+.flex-columns h2{
+    font-weight: 100;
+    font-size: 40px;
+
+}
+
+.flex-columns h4{
+    margin-bottom: 10px;
+}
+.flex-columns p{
+    margin: 20px 0;
+}
+
+.flex-columns.flex-reverse .row{
+    flex-direction: row-reverse;
+}
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100px;
+
+}
+
+.footer a{
+    color:white ;
+}
+
+.footer .social > * {
+    margin: 10px ;
+}
+
+.footer i:hover{
+    color:#28a745 ;
+}
+
+
+/* Fade */
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one {
+  -webkit-animation-delay: 0.2;
+  -moz-animation-delay: 0.2;
+  animation-delay: 0.2;
+}
+
+.fade-in.two {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay:0.4s;
+  animation-delay: 0.4s;
+}
+
+.fade-in.three {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
