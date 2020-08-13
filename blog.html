@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to the  Ledger blog">
+    <meta name="keywords" content="finance,market,assistance">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" 
+    integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    <title>Ledger Blog</title>
+</head>
+<body class="fade-in one">
+    <header id='hero' class="hero blog">
+        <div id='navbar' class="navbar top">
+            <h1 class="logo">
+                <a href="#">
+                    <span class="ptext">
+                        <i class="fas fa-book-open"></i>
+                    </span>Ledger
+                </a>
+                    
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>                  
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Blog</h1>
+        </div>
+    </header>
+
+    <main>
+        <article id="Post-1" class="flex-columns fade-in two">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="./img/blog/blog1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column bg-lite">
+                    <div class="column-2">
+                        <h2>Blog Post 1</h2>
+                        <p class="meta">
+                            <i class="fas fa-user"></i> Posted by John Doe| April 19 2020
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit harum, fuga quo itaque magnam nemo labore ullam quaerat obcaecati?
+                        </p>
+
+                        <a href="post.html" class="btn btn-dark"><i class="fas fa-chevron-right"></i> Read more</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+        <article id="Post-2" class="flex-columns flex-reverse fade-in two">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="./img/blog/blog2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column bg-dark">
+                    <div class="column-2">
+                        <h2>Blog Post 2</h2>
+                        <p class="meta">
+                            <i class="fas fa-user"></i> Posted by Jane Doe| April 20 2020
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit harum, fuga quo itaque magnam nemo labore ullam quaerat obcaecati?
+                        </p>
+                        <a href="post.html" class="btn btn-lite"><i class="fas fa-chevron-right"></i> Read more</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article id="Post-3" class="flex-columns fade-in two">
+            <div class="row">
+                <div class="column">
+                    <div class="column-1">
+                        <img src="./img/blog/blog3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="column bg-lite">
+                    <div class="column-2">
+                        <h2>Blog Post 3</h2>
+                        <p class="meta">
+                            <i class="fas fa-user"></i> Posted by Jane Doe| April 21 2020
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores impedit harum, fuga quo itaque magnam nemo labore ullam quaerat obcaecati?
+                        </p>
+                        <a href="post.html" class="btn btn-dark"><i class="fas fa-chevron-right"></i> Read more</a>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+
+    </main>
+
+
+    <footer class="footer bg-dark fade-in one">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+            <p>
+                Copyright &copy; 2020 - Ledger
+            </p>
+
+        </div>
+    </footer>
+
+   
+
+    <script>
+        const a=document.getElementById('navbar');
+        window.onscroll=function(){
+            if(window.pageYOffset > 100)
+                a.classList.remove('top');
+            else
+                a.classList.add('top');    
+        }
+       
+    </script>
+
+</body>
+</html>
